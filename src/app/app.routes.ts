@@ -1,18 +1,18 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home';
-import { Kanto } from './pages/kanto/kanto';
-import { Johto } from './pages/johto/johto';
-import { Hoenn } from './pages/hoenn/hoenn';
-import { Pokemart } from './pages/pokemart/pokemart';
-import { Cart } from './pages/cart/cart';
+import { KantoComponent } from './pages/kanto/kanto';
+import { JohtoComponent } from './pages/johto/johto';
+import { HoennComponent } from './pages/hoenn/hoenn';
+import { PokemartComponent } from './pages/pokemart/pokemart';
+import { CartComponent } from './pages/cart/cart';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'kanto', component: Kanto },
-  { path: 'johto', component: Johto },
-  { path: 'hoenn', component: Hoenn },
-  { path: 'pokemart', component: Pokemart },
-  { path: 'cart', component: Cart },
+  { path: 'kanto', component: KantoComponent },
+  { path: 'johto', component: JohtoComponent },
+  { path: 'hoenn', component: HoennComponent },
+  { path: 'pokemart', component: PokemartComponent },
+  { path: 'cart', component: CartComponent },
   { path: '**', redirectTo: 'home' }
 ];
