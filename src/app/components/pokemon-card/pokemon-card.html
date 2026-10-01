@@ -1,1 +1,7 @@
-<p>pokemon-card works!</p>
+<div class="pokemon-card">
+  <img [src]="pokemon().image" [alt]="pokemon().name" class="pokemon-img" />
+  <h3>{{ pokemon().name }}</h3>
+  <span class="type-badge">{{ pokemon().type }}</span>
+  <p class="held-item">🎒 Held Item: <strong>{{ pokemon().heldItem }}</strong></p>
+  <p class="description">{{ pokemon().description }}</p>
+</div>
