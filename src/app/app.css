@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #212529;
+}
+
+.top-banner {
+  background-color: #d32f2f;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 15px;
+  box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.top-banner h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.page-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 30px 24px;
+}

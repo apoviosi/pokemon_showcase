@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { PokemartService } from '../../services/pokemart';
 
 @Component({
-  imports: [],
   selector: 'app-navbar',
-  styleUrl: './navbar.css',
+  standalone: true,
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './navbar.html',
+  styleUrl: './navbar.css'
 })
-export class Navbar {}
+export class NavbarComponent {
+  martService = inject(PokemartService);
+}

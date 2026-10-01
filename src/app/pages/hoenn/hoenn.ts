@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { PokemonService } from '../../services/pokemon';
+import { PokemonCardComponent } from '../../components/pokemon-card/pokemon-card';
 
 @Component({
-  imports: [],
   selector: 'app-hoenn',
-  styleUrl: './hoenn.css',
+  standalone: true,
+  imports: [PokemonCardComponent],
   templateUrl: './hoenn.html',
+  styleUrl: './hoenn.css',
 })
-export class Hoenn {}
+export class HoennComponent {
+  pokemonService = inject(PokemonService);
+}

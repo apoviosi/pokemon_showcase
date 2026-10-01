@@ -1,0 +1,17 @@
+.region-section {
+  padding: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+.region-section h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  color: #2b8a3e;
+}
+
+.card-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}

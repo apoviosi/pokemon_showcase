@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { PokemonService } from '../../services/pokemon';
+import { PokemonCardComponent } from '../../components/pokemon-card/pokemon-card';
 
 @Component({
-  imports: [],
   selector: 'app-kanto',
-  styleUrl: './kanto.css',
+  standalone: true,
+  imports: [PokemonCardComponent], // <-- Add it here
   templateUrl: './kanto.html',
+  styleUrl: './kanto.css',
 })
-export class Kanto {}
+export class KantoComponent {
+  pokemonService = inject(PokemonService);
+}

@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { PokemonService } from '../../services/pokemon';
+import { PokemonCardComponent } from '../../components/pokemon-card/pokemon-card';
 
 @Component({
-  imports: [],
   selector: 'app-johto',
-  styleUrl: './johto.css',
+  standalone: true,
+  imports: [PokemonCardComponent],
   templateUrl: './johto.html',
+  styleUrl: './johto.css',
 })
-export class Johto {}
+export class JohtoComponent {
+  pokemonService = inject(PokemonService);
+}

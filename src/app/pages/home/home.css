@@ -1,0 +1,55 @@
+.home-container {
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.home-container h1 {
+  color: #222;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.intro {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 28px;
+}
+
+.region-history-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.history-card {
+  flex: 1 1 420px;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: #0066cc;
+}
+
+.history-card h2 {
+  margin-top: 0;
+  color: #0066cc;
+}
+
+.mart-card-highlight h2 {
+  color: #2e7d32;
+}
+
+.history-card p {
+  color: #444;
+  line-height: 1.6;
+  font-size: 14px;
+}

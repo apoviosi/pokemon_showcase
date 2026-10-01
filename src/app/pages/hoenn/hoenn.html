@@ -1,1 +1,8 @@
-<p>hoenn works!</p>
+<section class="region-section">
+  <h2>Hoenn Pokémon Showcase</h2>
+  <div class="card-grid">
+    @for (pokemon of pokemonService.hoenn(); track pokemon.id) {
+      <app-pokemon-card [pokemon]="pokemon" />
+    }
+  </div>
+</section>

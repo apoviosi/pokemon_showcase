@@ -1,1 +1,8 @@
-<p>johto works!</p>
+<section class="region-section">
+  <h2>Johto Pokémon Showcase</h2>
+  <div class="card-grid">
+    @for (pokemon of pokemonService.johto(); track pokemon.id) {
+      <app-pokemon-card [pokemon]="pokemon" />
+    }
+  </div>
+</section>
