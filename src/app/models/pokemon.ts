@@ -4,7 +4,7 @@ export interface Pokemon {
   type: string;
   heldItem: string;
   description: string;
-  image: string; // URL or emoji
+  image: string;
 }
 
 export interface MartItem {
