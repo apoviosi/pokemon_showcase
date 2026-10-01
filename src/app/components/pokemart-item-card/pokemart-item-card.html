@@ -1,1 +1,7 @@
-<p>pokemart-item-card works!</p>
+<div class="mart-card">
+  <div class="icon">{{ item().image }}</div>
+  <h4>{{ item().name }}</h4>
+  <p class="desc">{{ item().description }}</p>
+  <p class="price">₽{{ item().price }}</p>
+  <button (click)="addToCart.emit(item())">Add to Cart</button>
+</div>
