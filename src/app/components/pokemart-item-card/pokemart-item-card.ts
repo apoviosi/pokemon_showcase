@@ -1,9 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, input, output } from '@angular/core';
+import { MartItem } from '../../models/pokemon';
 
 @Component({
-  imports: [],
-  selector: 'app-pokemart-item-card',
-  styleUrl: './pokemart-item-card.css',
+  selector: 'app-mart-item-card',
+  standalone: true,
   templateUrl: './pokemart-item-card.html',
+  styleUrl: './pokemart-item-card.css',
 })
-export class PokemartItemCard {}
+export class PokemartItemCardComponent {
+  item = input.required<MartItem>();
+  addToCart = output<MartItem>();
+}
