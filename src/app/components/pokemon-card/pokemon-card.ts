@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Pokemon } from '../../models/pokemon';
 
 @Component({
-  imports: [],
   selector: 'app-pokemon-card',
-  styleUrl: './pokemon-card.css',
+  standalone: true,
   templateUrl: './pokemon-card.html',
+  styleUrl: './pokemon-card.css',
 })
-export class PokemonCard {}
+export class PokemonCardComponent {
+  pokemon = input.required<Pokemon>();
+}
