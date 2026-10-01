@@ -1,1 +1,8 @@
-<p>pokemart works!</p>
+<section class="mart-section">
+  <h2>Official PokéMart Supplies</h2>
+  <div class="card-grid">
+    @for (item of martService.items(); track item.id) {
+      <app-mart-item-card [item]="item" (addToCart)="martService.addToCart($event)" />
+    }
+  </div>
+</section>
